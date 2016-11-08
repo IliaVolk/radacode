@@ -189,8 +189,25 @@ body {
 
 .big-logo .for-mac {
   float: right;
-  font-size: 70%;
-  margin-top: -0.5rem;
+  font-size: 100%;
+}
+
+@media (max-width: 900px) {
+  .big-logo .for-mac {
+    margin-top: -0.5rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .big-logo .for-mac {
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .big-logo .for-mac {
+    margin-top: -2rem;
+  }
 }
 
 h3 {
@@ -470,8 +487,25 @@ body {
 
 .big-logo .for-mac {
   float: right;
-  font-size: 70%;
-  margin-top: -0.5rem;
+  font-size: 100%;
+}
+
+@media (max-width: 900px) {
+  .big-logo .for-mac {
+    margin-top: -0.5rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px) {
+  .big-logo .for-mac {
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .big-logo .for-mac {
+    margin-top: -2rem;
+  }
 }
 
 h3 {
