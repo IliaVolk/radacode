@@ -1,0 +1,175 @@
+
+$padding: 4rem
+$doublePadding: 8rem
+$contentSidePadding: 7rem
+@mixin pointable()
+  cursor: pointer
+$padding-content-side: 7rem
+
+
+
+body
+  overflow-x: hidden
+  @media (min-width: 1200px)
+    font-size: 18pt
+  @media (max-width: 1200px) and (min-width: 800px)
+    font-size: 16pt
+  @media (max-width: 800px)
+    font-size: 12pt
+  font-family: "Open Sans"
+.footer
+  position: absolute
+  left: 0
+  right: 0
+  @media (min-width: 1100px)
+    padding: 7rem 5rem 1.5rem 5rem
+  @media (max-width: 1100px)
+    padding: 4rem 2rem 2rem
+
+  background-image: url("image/bg-bot.png")
+  background-size: cover
+  background-position: top
+  @extend .col
+  div
+    @media (min-width: 1100px)
+      padding: 0 2rem
+    @media (max-width: 1100px)
+      padding: 0 1rem
+  .row
+    @media (min-width: 1100px)
+      padding: 1rem 2rem
+    @media (max-width: 1100px)
+      padding: 1rem 1rem
+    div
+      @include pointable()
+    i
+      @include circle(30px)
+
+.row
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: center
+
+.align-left
+  justify-content: flex-start
+.col
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+.content
+  display: flex
+  flex-direction: column
+  @media (min-width: 1100px)
+    padding: 1rem 7rem 4rem 7rem
+  @media (max-width: 1100px)
+    padding: 1rem 1rem 4rem 1rem
+
+  margin: -1rem
+  >div
+    width: 100%
+
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media (max-width: 480px)
+    flex-direction: column
+  font-size: 125%
+.right-nav
+  @extend .row
+  div
+    @include pointable()
+    @media (min-width: 1100px)
+      padding: 1rem 3rem
+    @media (max-width: 1100px)
+      padding: 0.5rem
+    white-space: nowrap
+
+.left-nav
+  @include pointable()
+  @media (max-width: 1100px)
+    padding: 1rem
+
+  font-size: 120%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.big-logo
+  @media (max-width: 1100px)
+    width: 100%
+  @media (min-width: 1100px)
+   width: 50%
+  margin-left: 5%
+  >img
+    width: 100%
+  .for-mac
+    float: right
+    font-size: 70%
+    margin-top: -0.5rem
+
+h3
+  margin-left: 10%
+
+
+.content-buynow
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 160%
+  @media (min-width: 1100px)
+    padding: $doublePadding
+  div
+    width: 50%
+.left-buynow
+  font-size: 190%
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    transform: scale(1.5)
+    margin-right: 1rem
+.right-buynow
+  display: flex
+  justify-content: center
+  align-items: center
+  span
+    background-color: green
+    padding: 0.5rem
+    @include pointable()
+
+.content
+  background-image: url("image/bg-top.png")
+  background-size: cover
+  background-position: bottom
+
+.header
+  @media (min-width: 1100px)
+    margin: $padding
+
+  .text
+    @media (min-width: 1100px)
+      padding: $padding
+    span
+      display: flex
+      text-align: center
+
+
+.content-buynow, .features
+  background-color: #eeeeee
+  margin: 2rem 0
+
+
+.bordered
+  border: 0 solid black
+  border-left-width: 4px
+  border-right-width: 4px
+
+
+.displayNone
+  display: none
+
+
