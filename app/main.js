@@ -7,7 +7,7 @@ window.onload = function() {
     var w = getWidth()
     if (w < criticalWidth)return
     var dy = 0.6 * Math.log(1.7+w/1821)
-    var dx = 0.6 * (w/1821)*(w/1830)
+    var dx = 0.6 * Math.pow(w/1821, 2)
     var scale = 1+3*Math.log(1+dx)
     var setStyle = function(el, style){
         var [x, y, angle] = style
@@ -22,7 +22,7 @@ window.onload = function() {
         [500, 70, 125],
         [650, 200, 150],
         [700, 420, 180],
-        [720, 640, 200]
+        [690, 640, 200]
     ]
     var legs = getLegs()
 
